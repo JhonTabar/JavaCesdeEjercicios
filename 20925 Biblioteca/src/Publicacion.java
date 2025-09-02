@@ -8,7 +8,6 @@ public class Publicacion {
     }
 
     public void MostrarFicha() {
-        Publicacion Libro = new Publicacion("1984", "George Orwell");
-        System.out.println("El titulo del libro es: " + Libro.Titulo + " escrito por " + Libro.Autor);
+        System.out.println("El titulo del libro es: " + Titulo + " escrito por " + Autor);
     }
 }
