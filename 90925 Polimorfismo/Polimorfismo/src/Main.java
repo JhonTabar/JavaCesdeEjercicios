@@ -1,8 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        Animal[] misAnimales = new Animal[3];
+        // A traves de arraylist
+        List<Animal> tusAnimales = new ArrayList<>();
+        tusAnimales.add(new Perro());
+        tusAnimales.add(new Perro());
+        tusAnimales.add(new Perro());
+        tusAnimales.add(new Perro());
 
+        for (Animal animal : tusAnimales) {
+            animal.hacerSonido();
+        }
+
+        // a traves de array
+        Animal[] misAnimales = new Animal[3];
         misAnimales[0] = new Perro();
         misAnimales[1] = new Gato();
         misAnimales[2] = new Animal();
